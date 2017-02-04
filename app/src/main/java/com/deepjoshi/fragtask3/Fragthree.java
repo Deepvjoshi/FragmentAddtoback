@@ -26,14 +26,14 @@ public class Fragthree extends Fragment {
             @Override
             public void onClick(View view) {
                // Toast.makeText(, "", Toast.LENGTH_SHORT).show();
-                Fragthree frmss = new Fragthree();
+              //  Fragthree frmss = new Fragthree();
                 FragmentManager fm = getFragmentManager();
                 FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.fragloc, frmss);
+              //  ft.replace(R.id.fragloc, frmss);
                 // ft.add(headlines_fragment,sp);
                 // ft.add(R.id.headlines_fragment,sp);
                 ft.addToBackStack(null);
-                //fm.popBackStack();
+                fm.popBackStack();
                 ft.commit();
             }
         });

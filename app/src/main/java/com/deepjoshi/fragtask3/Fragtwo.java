@@ -23,7 +23,7 @@ public class Fragtwo extends Fragment {
         Button bt=(Button)container.findViewById(R.id.Button1_frgtwo);
         Button bt1=(Button)container.findViewById(R.id.Button2_frgtwo);
 
-        bt.setOnClickListener(new View.OnClickListener() {
+        bt1.setOnClickListener(new View.OnClickListener() {
 
 
             @Override
@@ -39,13 +39,13 @@ public class Fragtwo extends Fragment {
 
             }
         });
-        bt1.setOnClickListener(new View.OnClickListener() {
+        bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragthree fr= new Fragthree();
+              //  Fragthree fr= new Fragthree();
                 FragmentManager fm= getFragmentManager();
                 FragmentTransaction ft=fm.beginTransaction();
-                ft.replace(R.id.fragloc,fr);
+               // ft.replace(R.id.fragloc,fr);
                 // ft.add(headlines_fragment,sp);
                 // ft.add(R.id.headlines_fragment,sp);
                 fm.popBackStack();
